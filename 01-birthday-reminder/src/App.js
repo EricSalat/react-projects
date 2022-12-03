@@ -11,7 +11,7 @@ function App() {
     <div className="App">
     <main>
       <section className="container">
-        <h3>{peopleDB.length} cumpleaños hoy</h3>
+        <h3>{peopleDB.length} cumpleaños este mes.</h3>
         <List people={peopleDB} />
         <button onClick={() => console.log("Me has hecho clic")}>Borrar todos</button>
 
