@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from "react";
 import data from './data';
 import List from './List';
+import logo from './assets/img/logo.png';
 
 function App() {
 
@@ -11,9 +12,9 @@ function App() {
     <div className="App">
     <main>
       <section className="container">
-        <h3>{peopleDB.length} cumpleaños este mes.</h3>
+        <h3>Cumpleaños de este mes</h3>
         <List people={peopleDB} />
-        <button onClick={() => console.log("Me has hecho clic")}>Borrar todos</button>
+        <button onClick={() => setPeople([])}>Borrar todos</button>
 
       </section>
     </main>

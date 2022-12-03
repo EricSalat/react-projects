@@ -2,9 +2,8 @@ import React from 'react';
 
 const List = ({ people }) => {
 
-  
+
   var mes = new Date().getMonth();
-  console.log(mes);
   
   switch(mes) {
     case 0:
@@ -44,6 +43,8 @@ const List = ({ people }) => {
         mes = "Diciembre";
         break;
 }
+
+
   
   let personasFiltradas = people.filter((person) => person.month == mes);
   
@@ -56,7 +57,7 @@ const List = ({ people }) => {
         const { id, name, age, image } = person;
           return (
             <article key={id} className='person'>
-              <img src={image} alt={name} />
+              <img src={image} alt={name} height="75" width="75" />
               <div>
                 <h4>{name}</h4>
                 <p>{age} años</p>
